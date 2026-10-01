@@ -26,6 +26,7 @@ class Latihandua extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("Nama : Ahmad Fadilah"),
+                SizedBox(height: 10),
                 Text("Kelas : XII RPL 1"),
                 Text("Nis :123456789"),
               ],
@@ -34,6 +35,7 @@ class Latihandua extends StatelessWidget {
               width: 200,
               height: 250,
               decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
               image: NetworkImage("https://www.shutterstock.com/editorial/image-editorial/NdTdg54eM6TdgcwbNTAyMg==/avenged-sevenfold---m-shadows-matthew-sanders-440nw-5841906h.jpg"),
               fit: BoxFit.cover,
