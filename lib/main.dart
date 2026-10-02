@@ -25,11 +25,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter App"),
-          backgroundColor: Colors.blue,
-          centerTitle: true,
-        ), 
          body: Latihanempat(),
       ), //Scaffold
     ); //MaterialApp
