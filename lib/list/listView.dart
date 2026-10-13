@@ -4,8 +4,7 @@ class Listview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp ( 
-      home : Scaffold ( 
+    return   Scaffold ( 
         appBar : AppBar ( title : Text ( 'Simple ListView' )), 
         body : ListView ( 
           children : [ 
@@ -14,7 +13,6 @@ class Listview extends StatelessWidget {
             ListTile ( title : Text ( 'Item 3' )), 
           ], 
         ), 
-      ), 
-    ); 
+      );
   }
 }

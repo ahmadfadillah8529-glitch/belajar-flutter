@@ -5,8 +5,7 @@ class Listviewhorizontal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp ( 
-      home : Scaffold ( 
+    return  Scaffold ( 
         appBar : AppBar ( title : Text ( 'Horizontal ListView' )), 
         body : ListView. builder ( 
           scrollDirection : Axis.horizontal, // Horizontal scrolling 
@@ -25,7 +24,6 @@ class Listviewhorizontal extends StatelessWidget {
             ); 
           }, 
         ), 
-      ), 
-    ); 
+      );
   }
 }

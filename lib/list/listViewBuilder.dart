@@ -5,8 +5,7 @@ class Listviewbuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp ( 
-      home : Scaffold ( 
+    return  Scaffold ( 
         appBar : AppBar ( title : Text ( 'ListView.builder' )), 
         body : ListView. builder ( 
           itemCount : items.length, // Total items 
@@ -16,7 +15,6 @@ class Listviewbuilder extends StatelessWidget {
             ); 
           }, 
         ), 
-      ), 
-    ); 
+      );
   }
 }

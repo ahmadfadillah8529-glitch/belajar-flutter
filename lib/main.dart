@@ -7,6 +7,8 @@ import 'package:flutter_ahmad_12rpl1/list/listViewBuilder.dart';
 import 'package:flutter_ahmad_12rpl1/list/listViewHorizontal.dart';
 import 'package:flutter_ahmad_12rpl1/list/listViewKostum.dart';
 import 'package:flutter_ahmad_12rpl1/list/listViewTerpisah.dart';
+import 'package:flutter_ahmad_12rpl1/navigator.dart';
+import 'package:flutter_ahmad_12rpl1/routes/app_routes.dart';
 import 'package:flutter_ahmad_12rpl1/row_colum/ColumWidget.dart';
 import 'package:flutter_ahmad_12rpl1/row_colum/LatihanDua.dart';
 import 'package:flutter_ahmad_12rpl1/row_colum/RowColumWidget.dart';
@@ -33,9 +35,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-         body: LatihanLima(),
-      ), //Scaffold
+      initialRoute: '/',
+      routes: AppRoutes.routes,
+      // home: Scaffold(
+      //    body: NavigatorWidget(),
+      // ), //Scaffold
     ); //MaterialApp
   }
 }

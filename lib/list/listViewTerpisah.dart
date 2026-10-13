@@ -5,8 +5,7 @@ class Listviewterpisah extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp ( 
-      home : Scaffold ( 
+    return Scaffold ( 
         appBar : AppBar ( title : Text ( 'ListView.separated' )), 
         body : ListView. separated ( 
           itemCount : items.length, 
@@ -17,7 +16,6 @@ class Listviewterpisah extends StatelessWidget {
             return  Divider ( color : Colors.grey); // Pemisah kustom 
           }, 
         ), 
-      ), 
-    ); 
+      );
   }
 }
