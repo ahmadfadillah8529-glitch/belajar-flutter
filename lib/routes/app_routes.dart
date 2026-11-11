@@ -12,6 +12,7 @@ import 'package:flutter_ahmad_12rpl1/list/listViewTerpisah.dart';
 import 'package:flutter_ahmad_12rpl1/pages/about.dart';
 import 'package:flutter_ahmad_12rpl1/form/input_form.dart';
 import 'package:flutter_ahmad_12rpl1/pages/home.dart';
+import 'package:flutter_ahmad_12rpl1/tokoWisata/home_page.dart';
 
 class AppRoutes {
   static const home = '/';
@@ -36,6 +37,7 @@ class AppRoutes {
 
   static const formLatihan = '/form-latihan';
 
+  static const tiket = '/tiket-wisata';
 
   static Map<String, WidgetBuilder> routes= {
     home:(context) => HomePage(),
@@ -59,5 +61,7 @@ class AppRoutes {
     formPage:(context) => BelajarForm(),
 
     formLatihan:(context) => FormLatihan(),
+
+    tiket:(context) => TiketHome(),
   };
 }

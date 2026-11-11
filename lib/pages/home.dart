@@ -96,6 +96,14 @@ class HomePage extends StatelessWidget {
               },
                child: Text('Masuk Form Latihan')
             ),
+
+            const SizedBox(height: 15),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/tiket-wisata');
+              },
+               child: Text('Masuk Toko Wisata')
+            ),
           ],
         ),
       )
