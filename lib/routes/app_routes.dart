@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ahmad_12rpl1/form/input_form.dart';
 import 'package:flutter_ahmad_12rpl1/grid/GridView.dart';
+import 'package:flutter_ahmad_12rpl1/latihan_form/input_screen.dart';
 import 'package:flutter_ahmad_12rpl1/latihan_grid_list/Grid.dart';
 import 'package:flutter_ahmad_12rpl1/latihan_grid_list/ListScreen.dart';
 import 'package:flutter_ahmad_12rpl1/list/listView.dart';
@@ -8,6 +10,7 @@ import 'package:flutter_ahmad_12rpl1/list/listViewHorizontal.dart';
 import 'package:flutter_ahmad_12rpl1/list/listViewKostum.dart';
 import 'package:flutter_ahmad_12rpl1/list/listViewTerpisah.dart';
 import 'package:flutter_ahmad_12rpl1/pages/about.dart';
+import 'package:flutter_ahmad_12rpl1/form/input_form.dart';
 import 'package:flutter_ahmad_12rpl1/pages/home.dart';
 
 class AppRoutes {
@@ -28,6 +31,11 @@ class AppRoutes {
   static const ListScreen = '/list-Screen';
   static const gridview = '/grid-view';
 
+  //Form
+  static const formPage = '/form-page';
+
+  static const formLatihan = '/form-latihan';
+
 
   static Map<String, WidgetBuilder> routes= {
     home:(context) => HomePage(),
@@ -46,5 +54,10 @@ class AppRoutes {
     //latihan
     ListScreen:(context) => ArticleListScreen(),
     gridview:(context) => GridProductPage(),
+
+    //Form
+    formPage:(context) => BelajarForm(),
+
+    formLatihan:(context) => FormLatihan(),
   };
 }

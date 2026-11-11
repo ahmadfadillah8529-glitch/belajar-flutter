@@ -79,6 +79,23 @@ class HomePage extends StatelessWidget {
               },
                child: Text('Masuk Grid Product')
             ),
+
+            //Form
+            const SizedBox(height: 15),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/form-page');
+              },
+               child: Text('Masuk Form')
+            ),
+
+            const SizedBox(height: 15),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/form-latihan');
+              },
+               child: Text('Masuk Form Latihan')
+            ),
           ],
         ),
       )
