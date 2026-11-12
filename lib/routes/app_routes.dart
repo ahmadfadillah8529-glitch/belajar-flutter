@@ -9,8 +9,10 @@ import 'package:flutter_ahmad_12rpl1/list/listViewBuilder.dart';
 import 'package:flutter_ahmad_12rpl1/list/listViewHorizontal.dart';
 import 'package:flutter_ahmad_12rpl1/list/listViewKostum.dart';
 import 'package:flutter_ahmad_12rpl1/list/listViewTerpisah.dart';
+import 'package:flutter_ahmad_12rpl1/models/comment.dart';
 import 'package:flutter_ahmad_12rpl1/pages/about.dart';
 import 'package:flutter_ahmad_12rpl1/form/input_form.dart';
+import 'package:flutter_ahmad_12rpl1/pages/comment_page.dart';
 import 'package:flutter_ahmad_12rpl1/pages/home.dart';
 import 'package:flutter_ahmad_12rpl1/tokoWisata/home_page.dart';
 
@@ -39,6 +41,8 @@ class AppRoutes {
 
   static const tiket = '/tiket-wisata';
 
+  static const comment = '/comment-page';
+
   static Map<String, WidgetBuilder> routes= {
     home:(context) => HomePage(),
     about:(context) => About(),
@@ -63,5 +67,7 @@ class AppRoutes {
     formLatihan:(context) => FormLatihan(),
 
     tiket:(context) => TiketHome(),
+
+    comment:(context) => CommentPage(),
   };
 }

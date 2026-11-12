@@ -104,6 +104,14 @@ class HomePage extends StatelessWidget {
               },
                child: Text('Masuk Toko Wisata')
             ),
+
+            const SizedBox(height: 15),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/comment-page');
+              },
+               child: Text('Masuk Api Comment')
+            ),
           ],
         ),
       )

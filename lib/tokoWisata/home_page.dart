@@ -32,6 +32,14 @@ class TiketHome extends StatelessWidget {
         'image': 'https://images.unsplash.com/photo-1534567153574-2b12153a87f0?auto=format&fit=crop&q=80&w=600',
         'description': 'Taman rekreasi keluarga berwawasan lingkungan dan alam bebas tempat perlindungan satwa.',
       },
+      {
+        'id': 'gunung-bromo',
+        'title': 'Gunung Bromo',
+        'location': 'Malang, Jawa Timur',
+        'price': 79000,
+        'image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmk--4qqEMz1fqAxM0BTszvPDA0sOuPDk4Uf_pB0rJg&s=10',
+        'description': ' Pemandangan matahari terbit (sunrise) dari Penanjakan, lautan pasir luas, dan Kawah Bromo..',
+      },
     ];
 
     final screenWidth = MediaQuery.of(context).size.width;
