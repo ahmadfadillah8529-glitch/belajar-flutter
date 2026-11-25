@@ -23,41 +23,66 @@ import 'package:flutter_ahmad_12rpl1/sizedbox_expanded_stack/LayoutTiga.dart';
 import 'package:flutter_ahmad_12rpl1/sizedbox_expanded_stack/SizedBoxWidget.dart';
 import 'package:flutter_ahmad_12rpl1/sizedbox_expanded_stack/StackWidget.dart';
 import 'package:flutter_ahmad_12rpl1/sizedbox_expanded_stack/expandedWidget.dart';
+import 'pages_auth/home_page.dart';
+import 'pages_auth/login_page.dart';
+import 'services/auth_service.dart';
 
-void main() {
-  runApp(const MyApp());
+// void main() {
+//   runApp(const MyApp());
+// }
+
+
+// class MyApp extends StatelessWidget {
+//   const MyApp({Key? key});
+  
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       initialRoute: '/',
+//       routes: AppRoutes.routes,
+//       home: Scaffold(
+//          body: NavigatorWidget(),
+//       ), //Scaffold
+//     ); //MaterialApp
+//   }
+// }
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final token = await AuthService().getToken();
+  runApp(MyApp(isLoggedIn: token != null));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key});
-  
+  final bool isLoggedIn;
+  const MyApp({super.key, required this.isLoggedIn});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
-      routes: AppRoutes.routes,
-      // home: Scaffold(
-      //    body: NavigatorWidget(),
-      // ), //Scaffold
-    ); //MaterialApp
-  }
-}
-
-class HelloWidget extends StatelessWidget {
-  const new({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-     child: Text("Hello, Flutter!", style: TextStyle(
-       fontSize: 24,
-       fontWeight: FontWeight.bold,
-       color: const Color.fromARGB(255, 2, 244, 196),
-       backgroundColor: Colors.black ,
-     )),
+      home: isLoggedIn ? const HomePage() : const LoginPage(),
     );
   }
 }
+
+
+
+// class HelloWidget extends StatelessWidget {
+//   const new({
+//     super.key,
+//   });
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Center(
+//      child: Text("Hello, Flutter!", style: TextStyle(
+//        fontSize: 24,
+//        fontWeight: FontWeight.bold,
+//        color: const Color.fromARGB(255, 2, 244, 196),
+//        backgroundColor: Colors.black ,
+//      )),
+//     );
+//   }
+// }
